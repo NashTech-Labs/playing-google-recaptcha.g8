@@ -1,0 +1,15 @@
+# Messages
+
+firstName=First Name
+lastName=Last Name
+email=E-mail
+phone=Phone
+captcha=* Please complete the following captcha :
+
+# error message
+error.required=Please complete this field
+error.email=Please enter a valid email address
+
+# constraint
+constraint.required=
+constraint.email=

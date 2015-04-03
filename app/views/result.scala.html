@@ -1,0 +1,28 @@
+@()(implicit flash: Flash, lang: Lang)
+
+@main("Result") {
+
+    <!-- Begin page content -->
+	<div class="container">
+		<div class="page-header">
+			
+		</div>
+		
+		<div class="row">
+        	<div class="col-lg-12">
+          		<div class="bs-component">
+            		<div class="panel panel-warning">
+              			<div class="panel-heading">
+                			<h3 class="panel-title">Success</h3>
+              			</div>
+              			<div id="resultPanelContent" class="panel-body">
+              				@if(flash.get("save.message").isDefined) {
+						        <p>@flash.get("save.message")</p>   
+						    }
+              			</div>
+            		</div>
+          		</div>
+        	</div>
+      	</div>
+    </div>
+}

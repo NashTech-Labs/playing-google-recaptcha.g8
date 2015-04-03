@@ -1,7 +1,46 @@
-@(message: String)
+@(regForm: Form[RegistrationForm])(implicit request: Request[AnyContent], lang: Lang)
 
-@main("Welcome to Play") {
+@import helper._
 
-    @play20.welcome(message)
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.f)}
 
+@main("Registration Form") {
+	
+	<!-- Begin page content -->
+	<div class="container">
+		<div class="page-header">
+			
+		</div>
+		
+		<div class="row">
+        	<div class="col-lg-12">
+          		<div class="bs-component">
+            		<div class="panel panel-warning">
+              			<div class="panel-heading">
+                			<h3 class="panel-title">Registration Form</h3>
+              			</div>
+              			<div id="registrationFormContent" class="panel-body">
+              				@form(action = routes.Registration.register(), 'class -> "form-horizontal") {
+						        @inputText(regForm("firstName"), 'tabindex -> 1, 'class -> "form-control")
+						        @inputText(regForm("lastName"), 'tabindex -> 2, 'class -> "form-control")
+						        @inputText(regForm("email"), 'tabindex -> 3, 'class -> "form-control")
+						        @inputText(regForm("phone"), 'tabindex -> 4, 'class -> "form-control")
+						        
+						        <div class="col-md-offset-2">
+						        	@recaptcha.recaptchaField(form = regForm, fieldName = "captcha", tabindex = Some(5))
+						        </div>
+						        
+						        <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								    	<button type="submit" class="btn btn-info">Submit</button>
+								    	<button type="reset" class="btn btn-default">Reset</button>
+									</div>
+								</div>
+			    			}
+              			</div>
+            		</div>
+          		</div>
+        	</div>
+      	</div>
+    </div>
 }
