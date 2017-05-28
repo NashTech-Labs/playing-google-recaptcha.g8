@@ -1,5 +1,7 @@
-# Playing with Google reCAPTCHA
-Basic example to integrate Google reCAPTCHA in Play Application with the help of play-recaptcha module
+A [Giter8][g8] template to integrate Google reCAPTCHA in Play Application with the help of play-recaptcha module.
+
+Playing with Google reCAPTCHA
+------------------------------
 
 ###[Play reCAPTCHA Module](http://chrisnappin.github.io/play-recaptcha/)
 This is a Play Framework module, for Scala and Play 2.x, to provide integration with Google reCAPTCHA (version 1 or 2) in a reactive (non-blocking) manner.
@@ -57,3 +59,14 @@ for more info check [here](https://github.com/chrisnappin/play-recaptcha/wiki/hi
 * [Bootstrap](http://getbootstrap.com/css/)
 * [Bootswatch](http://bootswatch.com/darkly/)
 * [WebJars](http://www.webjars.org/)
+
+Template license
+----------------
+Written in ​ 2017​ by ​ [Knoldus Software LLP](http://knoldus.com)
+
+To the extent possible under law, the author(s) have dedicated all copyright and
+related
+and neighboring rights to this template to the public domain worldwide.
+This template is distributed without any warranty. See
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+[g8]: http://www.foundweekends.org/giter8/
